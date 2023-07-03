@@ -1292,13 +1292,14 @@ nav .fa {
     }
 
     .card .card-content img {
-        border-radius: 1.875rem;
+        border-radius: 1.175rem;
         width: 100%;
     }
 
     .card .card-link-wrapper {
         font-size: 0.9375rem;
         word-spacing: 0.12rem;
+        border-radius: 1.125rem;
     }
 
     .aboutUs_row_top .row {
