@@ -1221,15 +1221,33 @@ nav .fa {
     }
 
     .name_1 {
-        padding: 0.4375rem 1.625rem;
+        padding: 0.4075rem 1.125rem;
     }
-
+    .name_2 {
+        padding: 0.4075rem 1.125rem;
+    }
+    .name_3 {
+        font-size: 13px;
+        padding: 0.4075rem 0.155rem;
+    }
     .name_4 {
-        padding: 0.4375rem 1.5rem;
+        padding: 0.4075rem 1.2rem;
     }
-
+    .name_5 {
+        padding: 0.4075rem 1.155rem;
+    }
+    .name_6 {
+        padding: 0.4075rem 0.825rem;
+    }
+    .name_7 {
+        font-size: 13px;
+        padding: 0.4075rem 0.525rem;
+    }
+    .name_8 {
+        padding: 0.4075rem 0.995rem;
+    }
     .name_9 {
-        padding: 0.4375rem 1.875rem;
+        padding: 0.4075rem 1.575rem;
     }
 
     .row .contacts_Column a {
