@@ -1959,6 +1959,24 @@ nav .fa {
 
                                                       /*HOME*/
 
+    .index_Header {
+        height: 65rem;
+    }
+    .logo {
+        width: 6.312rem;
+    }
+    .index_Opening_header {
+        font-size: 5.75rem;
+        margin: 25.925rem auto 5.125rem auto;
+    }
+    .index_Opening_para {
+        font-size: 1.85rem;
+        word-spacing: 0.60625rem;
+        line-height: 35pt;
+        margin-top: 1.125rem;
+    }
+
+    
     #index_hexGrid {
         padding-bottom: 4.4%
     }
