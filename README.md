@@ -6,8 +6,7 @@ Details of each section -
 
 👉 Home -> It is the website's landing page, where people can access our portfolio pages. There is a group photo, the group name, and a short description in the background. Below it, the portfolio pages section is located. At the bottom, the footer section is located. 
 
-[NOTE: 
-1. None of the portfolio pages have been made yet, so they will not be redirected to our portfolio pages. But if we get time, we will make it and attach it here.
+[NOTE: 1. Not all the portfolio pages have been made yet, so they will not be redirected to our portfolio pages. But if we get time, we will make it and attach it here.
 2. In the footer section, social media icons suggest that it will redirect to our group pages on specific platforms, but without YouTube, we didn't have any pages on these platforms.] 
 
 👉 Contact Us -> It is a personalized connection page where people can connect with us individually through various social media platforms. 
