@@ -111,7 +111,7 @@
 }
 
 .index_Opening_header {
-    width: 39.5%;
+    width: 40.5%;
     margin: 15.625rem auto 3.125rem auto;
     font-size: 3.75rem;
     word-spacing: 0.625rem;
@@ -1133,7 +1133,7 @@ nav .fa {
     .index_Opening_header {
         margin: 7.5rem auto 1.5625rem auto;
         font-size: 1.25rem;
-        width: 66%;
+        width: 68%;
     }
 
     .index_Opening_para {
@@ -1769,7 +1769,7 @@ nav .fa {
         letter-spacing: 0.3125rem;
         margin: 9.375rem auto 2.5rem auto;
         word-spacing: 0.625rem;
-        width: 44%;
+        width: 45%;
     }
 
     .index_Opening_para {
@@ -1958,24 +1958,6 @@ nav .fa {
 
 
                                                       /*HOME*/
-
-    .index_Header {
-        height: 65rem;
-    }
-    .logo {
-        width: 6.312rem;
-    }
-    .index_Opening_header {
-        font-size: 5.75rem;
-        margin: 25.925rem auto 5.125rem auto;
-    }
-    .index_Opening_para {
-        font-size: 1.85rem;
-        word-spacing: 0.60625rem;
-        line-height: 35pt;
-        margin-top: 1.125rem;
-    }
-
     
     #index_hexGrid {
         padding-bottom: 4.4%
@@ -2022,6 +2004,30 @@ nav .fa {
 
     .fa-class {
         font-size: 0.7rem;
+    }
+
+
+
+}
+
+@media only screen and (min-width: 1750px) {
+
+    .index_Header {
+        height: 65rem;
+    }
+    .logo {
+        width: 6.312rem;
+    }
+    .index_Opening_header {
+        font-size: 5.75rem;
+        margin: 25.925rem auto 5.125rem auto;
+        width: 65%;
+    }
+    .index_Opening_para {
+        font-size: 1.85rem;
+        word-spacing: 0.60625rem;
+        line-height: 35pt;
+        margin-top: 1.125rem;
     }
 
 
