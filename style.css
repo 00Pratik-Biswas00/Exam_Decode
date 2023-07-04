@@ -2012,6 +2012,7 @@ nav .fa {
 
 @media only screen and (min-width: 1750px) {
 
+                                                      /*HOME*/
     .index_Header {
         height: 65rem;
     }
@@ -2030,6 +2031,14 @@ nav .fa {
         margin-top: 1.125rem;
     }
 
+                                                      /*CONTACTS*/
 
+
+    .row {
+        padding-top: 8.5%;
+    }
+    .row .contacts_Column a {
+        font-size: 1.2rem;
+    }
 
 }
