@@ -9,7 +9,7 @@
 
 
 
-                                                      /*HOME*/
+/*HOME*/
 
 /*(index_Header)*/
 
@@ -178,32 +178,37 @@ nav .fa {
 
 .index_hex {
     position: relative;
-    outline: 0.0625rem solid transparent; /* fix for jagged edges in FF on hover transition */
+    outline: 0.0625rem solid transparent;
+    /* fix for jagged edges in FF on hover transition */
     visibility: hidden;
 }
 
 .index_hex::after {
     content: '';
     display: block;
-    padding-bottom: 86.602%; /* =  100 / tan(60) * 1.5 */
+    padding-bottom: 86.602%;
+    /* =  100 / tan(60) * 1.5 */
 }
 
 .index_hexIn {
     margin: 0 2%;
     overflow: hidden;
-    outline: 0.0625rem solid transparent; /* fix for jagged edges in FF on hover transition */
+    outline: 0.0625rem solid transparent;
+    /* fix for jagged edges in FF on hover transition */
     position: absolute;
     padding-bottom: 110.851%;
     transform: rotate3d(0, 0, 1, -60deg) skewY(30deg);
     visibility: hidden;
-    width: 96%; /* =  width / sin(60) */
+    width: 96%;
+    /* =  width / sin(60) */
     -webkit-transform: rotate3d(0, 0, 1, -60deg) skewY(30deg);
     -ms-transform: rotate3d(0, 0, 1, -60deg) skewY(30deg);
 }
 
 .index_hexIn * {
     position: absolute;
-    outline: 0.0625rem solid transparent; /* fix for jagged edges in FF on hover transition */
+    outline: 0.0625rem solid transparent;
+    /* fix for jagged edges in FF on hover transition */
     visibility: visible;
 }
 
@@ -289,7 +294,7 @@ nav .fa {
 
 
 
-                                                      /*CONTACTS*/
+/*CONTACTS*/
 
 
 .sub_header {
@@ -428,9 +433,9 @@ nav .fa {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0,0,0,0.8);
+    background: rgba(0, 0, 0, 0.8);
     z-index: 99999;
-    opacity:0;
+    opacity: 0;
     -webkit-transition: opacity 400ms ease-in;
     -moz-transition: opacity 400ms ease-in;
     transition: opacity 200ms ease-in;
@@ -438,11 +443,11 @@ nav .fa {
 }
 
 .modalDialogue:target {
-    opacity:1;
+    opacity: 1;
     pointer-events: auto;
 }
 
-.modalDialogue > div {
+.modalDialogue>div {
     width: 25rem;
     position: relative;
     margin: 7% auto;
@@ -472,9 +477,10 @@ nav .fa {
     -webkit-box-shadow: 0.0625rem 0.0625rem 0.1875rem #000;
     box-shadow: 0.0625rem 0.0625rem 0.1875rem #000;
 }
-.close:hover { 
+
+.close:hover {
     background: #000;
-    color: #ffffff; 
+    color: #ffffff;
 }
 
 
@@ -487,7 +493,8 @@ nav .fa {
 #insta {
     background: radial-gradient(circle at 30% 17%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     background-clip: text;
-    -webkit-background-clip: text; /* Also define standard property for compatibility */
+    -webkit-background-clip: text;
+    /* Also define standard property for compatibility */
     -webkit-text-fill-color: transparent;
 }
 
@@ -510,7 +517,7 @@ nav .fa {
 
 
 
-                                                      /*ABOUT US */
+/*ABOUT US */
 
 
 /* Past parts are in the Contact section */
@@ -630,6 +637,7 @@ nav .fa {
     color: white;
     text-decoration: none;
 }
+
 .aboutUs_checkCV:hover {
     color: white;
 }
@@ -653,7 +661,7 @@ nav .fa {
 }
 
 
-                                                      /* OUR GOALS */
+/* OUR GOALS */
 
 .our_goals_row {
     padding: 1.5%;
@@ -700,17 +708,19 @@ nav .fa {
     width: fit-content;
     word-spacing: 0.25rem;
 }
+
 .our_goals_click_here {
     text-decoration: none;
     color: white;
     cursor: pointer;
 }
+
 .our_goals_click_here:hover {
     color: white;
 }
 
 
-                                                      /*(FOOTER)*/
+/*(FOOTER)*/
 
 
 
@@ -750,17 +760,18 @@ nav .fa {
 
 
 
-                                                      /* MEDIA QUERY ZONE */
-                                                      /* MEDIA QUERY ZONE */
-                                                      /* MEDIA QUERY ZONE */
-                                                      /* MEDIA QUERY ZONE */
+/* MEDIA QUERY ZONE */
+/* MEDIA QUERY ZONE */
+/* MEDIA QUERY ZONE */
+/* MEDIA QUERY ZONE */
 
 
 
 /*Special Media Query Case 1*/
 
 
-@media (max-width: 768px) {     /*For hamburger menu*/
+@media (max-width: 768px) {
+    /*For hamburger menu*/
 
     .primary-navigation {
         flex-direction: column;
@@ -817,7 +828,9 @@ nav .fa {
 /*Special Media Query Case 2*/
 
 
-@media (max-width: 992px) {     /*About Us -> Column reverse*/
+@media (max-width: 992px) {
+
+    /*About Us -> Column reverse*/
     .our_goals_sp_row {
         flex-direction: column-reverse;
         display: flex;
@@ -836,7 +849,7 @@ nav .fa {
 
 @media (max-width: 350px) {
 
-                                                      /*HOME*/
+    /*HOME*/
 
 
     .index_Header {
@@ -916,7 +929,8 @@ nav .fa {
     }
 
     .index_hex {
-        width: 20%; /* = 100 / 5 */
+        width: 20%;
+        /* = 100 / 5 */
     }
 
     .index_hexIn {
@@ -944,7 +958,7 @@ nav .fa {
         font-size: small;
     }
 
-                                                      /*CONTACT*/
+    /*CONTACT*/
 
     .row {
         padding-top: 0;
@@ -999,14 +1013,14 @@ nav .fa {
         padding: 0 0 0 1.875rem;
     }
 
-    .modalDialogue > div {
+    .modalDialogue>div {
         width: 15.625rem;
         margin: 20% auto;
     }
 
 
 
-                                                      /*ABOUT US*/
+    /*ABOUT US*/
 
 
     .index_my_body_1 {
@@ -1052,7 +1066,7 @@ nav .fa {
     }
 
 
-                                                      /*OUR GOALS*/
+    /*OUR GOALS*/
 
     .row .our_goals_col img {
         height: 14rem;
@@ -1078,7 +1092,7 @@ nav .fa {
     }
 
 
-                                                      /*(FOOTER)*/
+    /*(FOOTER)*/
 
     .footer {
         height: 2.2rem;
@@ -1098,7 +1112,7 @@ nav .fa {
 
     .fa-class {
         font-size: 0.42rem;
-    }    
+    }
 
 }
 
@@ -1106,7 +1120,7 @@ nav .fa {
 
 @media only screen and (max-width: 600px) and (min-width: 350px) {
 
-                                                      /*HOME*/
+    /*HOME*/
 
 
     .index_Header {
@@ -1209,7 +1223,7 @@ nav .fa {
 
 
 
-                                                      /*CONTACT*/
+    /*CONTACT*/
 
 
     .contacts_column_name {
@@ -1219,29 +1233,37 @@ nav .fa {
     .name_1 {
         padding: 0.4075rem 1.125rem;
     }
+
     .name_2 {
         padding: 0.4075rem 1.125rem;
     }
+
     .name_3 {
         font-size: 13px;
         padding: 0.4075rem 0.155rem;
     }
+
     .name_4 {
         padding: 0.4075rem 1.2rem;
     }
+
     .name_5 {
         padding: 0.4075rem 1.155rem;
     }
+
     .name_6 {
         padding: 0.4075rem 0.825rem;
     }
+
     .name_7 {
         font-size: 13px;
         padding: 0.4075rem 0.525rem;
     }
+
     .name_8 {
         padding: 0.4075rem 0.995rem;
     }
+
     .name_9 {
         padding: 0.4075rem 1.575rem;
     }
@@ -1254,14 +1276,14 @@ nav .fa {
         padding: 0 0 0 0;
     }
 
-    .modalDialogue > div {
+    .modalDialogue>div {
         width: 17.5rem;
         margin: 15% auto;
     }
 
 
 
-                                                      /*ABOUT US*/
+    /*ABOUT US*/
 
 
     .index_my_body_1 {
@@ -1309,7 +1331,7 @@ nav .fa {
 
 
 
-                                                      /*OUR GOALS*/
+    /*OUR GOALS*/
 
 
 
@@ -1340,7 +1362,7 @@ nav .fa {
 
 
 
-                                                      /*(FOOTER)*/
+    /*(FOOTER)*/
 
     .footer {
         height: 2.2rem;
@@ -1414,7 +1436,8 @@ nav .fa {
     }
 
     .index_hex {
-        width: 20%; /* = 100 / 5 */
+        width: 20%;
+        /* = 100 / 5 */
     }
 
     .index_hex:nth-child(9n+6) {
@@ -1424,7 +1447,7 @@ nav .fa {
 
 
 
-                                                      /*CONTACT*/
+    /*CONTACT*/
 
 
     .sub_header_logo {
@@ -1491,7 +1514,7 @@ nav .fa {
 
 
 
-                                                      /*ABOUT US*/
+    /*ABOUT US*/
 
 
     .index_my_body_1 {
@@ -1526,7 +1549,7 @@ nav .fa {
         font-size: 0.9375rem;
     }
 
-                                                      /*OUR GOALS*/
+    /*OUR GOALS*/
 
 
     .row .our_goals_col img {
@@ -1552,7 +1575,7 @@ nav .fa {
     }
 
 
-                                                      /*(FOOTER)*/
+    /*(FOOTER)*/
 
     .footer {
         height: 3rem;
@@ -1581,7 +1604,7 @@ nav .fa {
 
 @media only screen and (max-width: 992px) and (min-width: 768px) {
 
-                                                      /*HOME*/
+    /*HOME*/
 
     .index_Header {
         height: 24.5rem;
@@ -1624,16 +1647,19 @@ nav .fa {
     }
 
     .index_hex {
-        width: 20%;  /* = 100 / 5 */
+        width: 20%;
+        /* = 100 / 5 */
     }
 
-    .index_hex:nth-child(9n+6) {  /* first hexagon of even rows */
-        margin-left: 10%;  /* = width of .index_hex / 2  to indent even rows */
+    .index_hex:nth-child(9n+6) {
+        /* first hexagon of even rows */
+        margin-left: 10%;
+        /* = width of .index_hex / 2  to indent even rows */
     }
 
 
 
-                                                      /*CONTACT*/
+    /*CONTACT*/
 
     .row {
         padding-top: 0;
@@ -1657,7 +1683,7 @@ nav .fa {
     }
 
 
-                                                      /*ABOUT US*/
+    /*ABOUT US*/
 
     .index_my_body_1 {
         padding: 3%;
@@ -1694,7 +1720,7 @@ nav .fa {
     }
 
 
-                                                      /*OUR GOALS*/
+    /*OUR GOALS*/
 
 
     .row .our_goals_col img {
@@ -1720,7 +1746,7 @@ nav .fa {
     }
 
 
-                                                      /*(FOOTER)*/
+    /*(FOOTER)*/
 
     .footer {
         height: 3.5rem;
@@ -1746,7 +1772,7 @@ nav .fa {
 
 @media only screen and (max-width: 1400px) and (min-width: 992px) {
 
-                                                      /*HOME*/
+    /*HOME*/
 
     .index_nav-links ul li {
         padding: 0rem 0rem;
@@ -1785,15 +1811,18 @@ nav .fa {
     }
 
     .index_hex {
-        width: 20%;  /* = 100 / 5 */
+        width: 20%;
+        /* = 100 / 5 */
     }
 
-    .index_hex:nth-child(9n+6) {  /* first hexagon of even rows */
-        margin-left: 10%;  /* = width of .index_hex / 2  to indent even rows */
+    .index_hex:nth-child(9n+6) {
+        /* first hexagon of even rows */
+        margin-left: 10%;
+        /* = width of .index_hex / 2  to indent even rows */
     }
 
 
-                                                      /*CONTACT*/
+    /*CONTACT*/
 
     .row {
         padding-top: 5.5%;
@@ -1862,7 +1891,7 @@ nav .fa {
     }
 
 
-                                                      /*ABOUT US*/
+    /*ABOUT US*/
 
 
     .index_my_body_1 {
@@ -1895,7 +1924,7 @@ nav .fa {
     }
 
 
-                                                      /*OUR GOALS*/
+    /*OUR GOALS*/
 
     .row .our_goals_col img {
         height: 24.5rem;
@@ -1919,7 +1948,7 @@ nav .fa {
     }
 
 
-                                                      /*(FOOTER)*/
+    /*(FOOTER)*/
 
     .footer {
         height: 3.7rem;
@@ -1953,22 +1982,25 @@ nav .fa {
 @media only screen and (min-width: 1400px) {
 
 
-                                                      /*HOME*/
-    
+    /*HOME*/
+
     #index_hexGrid {
         padding-bottom: 4.4%
     }
 
     .index_hex {
-        width: 20%;  /* = 100 / 5 */
+        width: 20%;
+        /* = 100 / 5 */
     }
 
-    .index_hex:nth-child(9n+6) {  /* first hexagon of even rows */
-        margin-left: 10%;  /* = width of .index_hex / 2  to indent even rows */
+    .index_hex:nth-child(9n+6) {
+        /* first hexagon of even rows */
+        margin-left: 10%;
+        /* = width of .index_hex / 2  to indent even rows */
     }
 
 
-                                                      /*CONTACTS*/
+    /*CONTACTS*/
 
     .contacts_Column {
         padding: 1.5rem;
@@ -1977,7 +2009,7 @@ nav .fa {
 
 
 
-                                                      /*ABOUT US*/
+    /*ABOUT US*/
 
     .cards {
         grid-auto-columns: calc(25% - 1.875rem);
@@ -1986,8 +2018,8 @@ nav .fa {
 
 
 
-    
-                                                      /*(FOOTER)*/
+
+    /*(FOOTER)*/
 
     .footer {
         height: 3.9rem;
@@ -2008,18 +2040,21 @@ nav .fa {
 
 @media only screen and (min-width: 1750px) {
 
-                                                      /*HOME*/
+    /*HOME*/
     .index_Header {
         height: 65rem;
     }
+
     .logo {
         width: 6.312rem;
     }
+
     .index_Opening_header {
         font-size: 5.75rem;
         margin: 25.925rem auto 5.125rem auto;
         width: 65%;
     }
+
     .index_Opening_para {
         font-size: 1.85rem;
         word-spacing: 0.60625rem;
@@ -2027,12 +2062,13 @@ nav .fa {
         margin-top: 1.125rem;
     }
 
-                                                      /*CONTACTS*/
+    /*CONTACTS*/
 
 
     .row {
         padding-top: 8.5%;
     }
+
     .row .contacts_Column a {
         font-size: 1.2rem;
     }
