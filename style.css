@@ -5,6 +5,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    /* pointer-events: none; */
 }
 
 
@@ -14,13 +15,14 @@
 /*(index_Header)*/
 
 .index_Header {
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.779), rgba(2, 8, 33, 0.427)), url("Images/background_img1.jpg");
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.779), rgba(2, 8, 33, 0.427)), url("Images/bg_img1.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 40rem;
     position: relative;
     width: 100%;
+
 }
 
 .logo {
@@ -100,7 +102,7 @@
     width: 89%;
     color: white;
     position: relative;
-    top: 5%;
+    top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -108,7 +110,7 @@
 
 .index_Opening_header {
     width: 40.5%;
-    margin: 15.625rem auto 3.125rem auto;
+    margin: 15.625rem auto 1.125rem auto;
     font-size: 3.75rem;
     word-spacing: 0.625rem;
     letter-spacing: 0.3125rem;
@@ -163,18 +165,20 @@ nav .fa {
 
 #index_hexGrid {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     font-family: 'Raleway', sans-serif;
     font-size: 0.9375rem;
     list-style-type: none;
     margin: 0 auto;
-    padding: 2.1875rem 0;
+    padding: 1.1875rem 0;
     width: 88%;
+    /* align-items: center;
+    justify-content: space-evenly; */
 }
 
-.hexagonal_gap {
+/* .hexagonal_gap {
     padding: 0 10%;
-}
+} */
 
 .index_hex {
     position: relative;
@@ -235,6 +239,7 @@ nav .fa {
     width: auto;
     -webkit-transform: rotate3d(0, 0, 0, 0deg);
     -ms-transform: rotate3d(0, 0, 0, 0deg);
+    pointer-events: none;
 }
 
 .index_hex:hover img {
@@ -346,22 +351,61 @@ nav .fa {
     padding: 0.625rem;
 }
 
-.row .contacts_Column p {
+
+
+.contacts_Column_left {
     align-items: center;
     box-shadow: 0.25rem 0.25rem 0.25rem 0.25rem #41C1BA;
     border-radius: 6.25rem 1.25rem 1.25rem 6.25rem;
     color: #001D44;
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: stretch;
+    justify-content: space-between;
     overflow: hidden;
-    padding: 0.125rem 0 0.125rem 0.0625rem;
     text-align: center;
     text-decoration: none;
     transition: 0.4s;
 }
 
-.row .contacts_Column p:hover {
+.contacts_Column_right {
+    align-items: center;
+    box-shadow: -0.25rem 0.25rem 0.25rem 0.25rem #41C1BA;
+    border-radius: 1.25rem 6.25rem 6.25rem 1.25rem;
+    color: #001D44;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: stretch;
+    justify-content: space-between;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+
+.row .contacts_Column span:hover {
     transform: scale(0.965);
     z-index: 1;
+}
+
+
+.ccc {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.ccc p {
+    margin-bottom: 0;
+}
+
+.contact_column_icons {
+    width: 50%;
 }
 
 .contacts_Column img {
@@ -378,42 +422,16 @@ nav .fa {
     color: #fff;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-}
-
-.name_1 {
     padding: 0.4375rem 1.5625rem;
+    /* margin: 0 1rem; */
+    width: 50%;
+    text-decoration: none;
+    cursor: pointer;
 }
 
-.name_2 {
-    padding: 0.4375rem 1.3125rem;
-}
-
-.name_3 {
-    padding: 0.4375rem 0.0625rem;
-}
-
-.name_4 {
-    padding: 0.4375rem 1.375rem;
-}
-
-.name_5 {
-    padding: 0.4375rem 1.4375rem;
-}
-
-.name_6 {
-    padding: 0.4375rem 1rem;
-}
-
-.name_7 {
-    padding: 0.4375rem 0.375rem;
-}
-
-.name_8 {
-    padding: 0.4375rem 1.1875rem;
-}
-
-.name_9 {
-    padding: 0.4375rem 1.8125rem;
+.contacts_column_name:hover {
+    color: #000;
+    text-decoration: underline;
 }
 
 .row .contacts_Column a {
@@ -422,6 +440,7 @@ nav .fa {
 
 .contact_icons {
     padding: 0.1875rem 0.3125rem 0.0625rem;
+    font-size: medium;
 }
 
 
@@ -499,7 +518,8 @@ nav .fa {
 }
 
 #twitter {
-    color: #00acee;
+    color: black;
+    font-size: 2em;
 }
 
 #linkedin {
@@ -682,6 +702,7 @@ nav .fa {
     font-family: 'Caprasimo', cursive;
     font-size: 1.5625rem;
     padding: 0.9375rem;
+    text-decoration: underline;
 }
 
 .our_goals_row .v_line img {
@@ -757,7 +778,9 @@ nav .fa {
     text-align: center;
 }
 
-
+.footer_x {
+    font-size: 2em;
+}
 
 
 /* MEDIA QUERY ZONE */
@@ -853,7 +876,8 @@ nav .fa {
 
 
     .index_Header {
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.779), rgba(2, 8, 33, 0.427)), url("Images/background_img_media1.jpg");
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.779), rgba(2, 8, 33, 0.427)), url("Images/bg_img2.png");
+
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -894,9 +918,10 @@ nav .fa {
         font-size: 0.625rem;
     }
 
-    #index_hexGrid {
+    /* #index_hexGrid {
         font-size: 0.8125rem;
-    }
+        flex-wrap: wrap;
+    } */
 
     .primary-navigation {
         padding: 4.375rem 0.4375rem;
@@ -922,6 +947,7 @@ nav .fa {
         font-size: 0.8125rem;
         margin-left: auto;
         padding-bottom: 40%;
+        flex-wrap: wrap;
     }
 
     .hexagonal_gap {
@@ -961,7 +987,7 @@ nav .fa {
     /*CONTACT*/
 
     .row {
-        padding-top: 0;
+        padding-top: 0%;
     }
 
     .contacts_column_name {
@@ -969,49 +995,14 @@ nav .fa {
         font-size: 0.625rem;
     }
 
-    .name_1 {
-        padding: 0.4375rem 1.5625rem;
-    }
-
-    .name_2 {
-        padding: 0.4375rem 1.4375rem;
-    }
-
-    .name_3 {
-        padding: 0.4375rem 0.375rem;
-    }
-
-    .name_4 {
-        padding: 0.4375rem 1.4375rem;
-    }
-
-    .name_5 {
-        padding: 0.4375rem 1.5rem;
-    }
-
-    .name_6 {
-        padding: 0.4375rem 1.125rem;
-    }
-
-    .name_7 {
-        padding: 0.4375rem 0.625rem;
-    }
-
-    .name_8 {
-        padding: 0.4375rem 1.3125rem;
-    }
-
-    .name_9 {
-        padding: 0.4375rem 1.75rem;
-    }
 
     .row .contacts_Column a {
         font-size: 0.5rem;
     }
 
-    .contacts_Column .contact_column_icons {
+    /* .contacts_Column .contact_column_icons {
         padding: 0 0 0 1.875rem;
-    }
+    } */
 
     .modalDialogue>div {
         width: 15.625rem;
@@ -1124,7 +1115,8 @@ nav .fa {
 
 
     .index_Header {
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.779), rgba(2, 8, 33, 0.427)), url("Images/background_img_media1.jpg");
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.779), rgba(2, 8, 33, 0.427)), url("Images/bg_img2.png");
+
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -1182,6 +1174,7 @@ nav .fa {
     #index_hexGrid {
         margin-left: auto;
         padding-bottom: 40%;
+        flex-wrap: wrap;
     }
 
     .hexagonal_gap {
@@ -1227,54 +1220,16 @@ nav .fa {
 
 
     .contacts_column_name {
-        font-size: 0.9075rem;
-    }
-
-    .name_1 {
-        padding: 0.4075rem 1.125rem;
-    }
-
-    .name_2 {
-        padding: 0.4075rem 1.125rem;
-    }
-
-    .name_3 {
-        font-size: 13px;
-        padding: 0.4075rem 0.155rem;
-    }
-
-    .name_4 {
-        padding: 0.4075rem 1.2rem;
-    }
-
-    .name_5 {
-        padding: 0.4075rem 1.155rem;
-    }
-
-    .name_6 {
-        padding: 0.4075rem 0.825rem;
-    }
-
-    .name_7 {
-        font-size: 13px;
-        padding: 0.4075rem 0.525rem;
-    }
-
-    .name_8 {
-        padding: 0.4075rem 0.995rem;
-    }
-
-    .name_9 {
-        padding: 0.4075rem 1.575rem;
+        font-size: 0.7075rem;
     }
 
     .row .contacts_Column a {
         font-size: 0.5525rem;
     }
 
-    .contacts_Column .contact_column_icons {
+    /* .contacts_Column .contact_column_icons {
         padding: 0 0 0 0;
-    }
+    } */
 
     .modalDialogue>div {
         width: 17.5rem;
@@ -1393,10 +1348,11 @@ nav .fa {
 @media only screen and (max-width: 768px) and (min-width: 601px) {
 
     .index_Header {
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.779), rgba(2, 8, 33, 0.427)), url("Images/background_img1.jpg");
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.779), rgba(2, 8, 33, 0.427)), url("Images/bg_img2.png");
+
         background-size: cover;
         background-position: center;
-        height: 20rem;
+        height: 25rem;
     }
 
     .logo {
@@ -1408,7 +1364,7 @@ nav .fa {
     }
 
     .index_Exam-Decode {
-        top: 5%;
+        top: 12%;
     }
 
     .index_Opening_header {
@@ -1433,6 +1389,8 @@ nav .fa {
     #index_hexGrid {
         padding-bottom: 4.4%;
         font-size: 0.625rem;
+        align-items: center;
+        justify-content: space-evenly;
     }
 
     .index_hex {
@@ -1456,7 +1414,7 @@ nav .fa {
     }
 
     .row {
-        padding-top: 0;
+        padding-top: 0%;
     }
 
     .contacts_Column img {
@@ -1464,52 +1422,16 @@ nav .fa {
     }
 
     .contacts_column_name {
-        margin-left: 1.875rem;
-    }
-
-    .name_1 {
-        padding: 0.4375rem 1.875rem;
-    }
-
-    .name_2 {
-        padding: 0.4375rem 1.75rem;
-    }
-
-    .name_3 {
-        padding: 0.4375rem 0.5rem;
-    }
-
-    .name_4 {
-        padding: 0.4375rem 1.8125rem;
-    }
-
-    .name_5 {
-        padding: 0.4375rem 1.9375rem;
-    }
-
-    .name_6 {
-        padding: 0.4375rem 1.5rem;
-    }
-
-    .name_7 {
-        padding: 0.4375rem 0.875rem;
-    }
-
-    .name_8 {
-        padding: 0.4375rem 1.6875rem;
-    }
-
-    .name_9 {
-        padding: 0.4375rem 2.3125rem;
+        margin-left: 0rem;
     }
 
     .row .contacts_Column a {
-        font-size: 1rem;
+        font-size: 0.8125rem;
     }
 
-    .contacts_Column .contact_column_icons {
+    /* .contacts_Column .contact_column_icons {
         padding: 0 0 0 3.0625rem;
-    }
+    } */
 
 
 
@@ -1518,7 +1440,7 @@ nav .fa {
 
 
     .index_my_body_1 {
-        padding: 3%;
+        padding: 5% 0;
     }
 
     .index_my_body_1_h {
@@ -1607,7 +1529,7 @@ nav .fa {
     /*HOME*/
 
     .index_Header {
-        height: 24.5rem;
+        height: 26rem;
     }
 
     .logo {
@@ -1644,6 +1566,8 @@ nav .fa {
     #index_hexGrid {
         font-size: 0.75rem;
         padding-bottom: 4.4%;
+        align-items: center;
+        justify-content: space-evenly;
     }
 
     .index_hex {
@@ -1662,25 +1586,25 @@ nav .fa {
     /*CONTACT*/
 
     .row {
-        padding-top: 0;
+        padding-top: 0%;
     }
 
     .contacts_Column img {
-        width: 15%;
+        width: 20%;
     }
 
     .contacts_column_name {
-        margin-left: 5rem;
+        margin-left: 0rem;
     }
 
     .row .contacts_Column a {
-        font-size: 1.0625rem;
-        padding: 0 0.3125rem;
+        /* font-size: 1.0625rem; */
+        padding: 0rem;
     }
 
-    .contacts_Column .contact_column_icons {
+    /* .contacts_Column .contact_column_icons {
         padding: 0 0 0 5.3125rem;
-    }
+    } */
 
 
     /*ABOUT US*/
@@ -1779,7 +1703,7 @@ nav .fa {
     }
 
     .index_Header {
-        height: 32rem;
+        height: 35rem;
     }
 
     .index_Exam-Decode {
@@ -1807,7 +1731,9 @@ nav .fa {
 
 
     #index_hexGrid {
-        padding-bottom: 4.4%
+        padding-bottom: 4.4%;
+        align-items: center;
+        justify-content: space-evenly;
     }
 
     .index_hex {
@@ -1825,11 +1751,11 @@ nav .fa {
     /*CONTACT*/
 
     .row {
-        padding-top: 5.5%;
+        padding-top: 3%;
     }
 
     .contacts_Column {
-        padding: 1.8125rem;
+        /* padding: 1.8125rem; */
     }
 
     .contacts_Column img {
@@ -1838,52 +1764,17 @@ nav .fa {
 
     .contacts_column_name {
         font-size: medium;
-        margin-left: 0.0625rem;
+        margin-left: 0rem;
     }
 
-    .name_1 {
-        padding: 0.1875rem 1.5rem;
-    }
-
-    .name_2 {
-        padding: 0.1875rem 1.25rem;
-    }
-
-    .name_3 {
-        padding: 0.1875rem 0rem;
-    }
-
-    .name_4 {
-        padding: 0.1875rem 1.3125rem;
-    }
-
-    .name_5 {
-        padding: 0.1875rem 1.375rem;
-    }
-
-    .name_6 {
-        padding: 0.1875rem 0.9375rem;
-    }
-
-    .name_7 {
-        padding: 0.1875rem 0.3125rem;
-    }
-
-    .name_8 {
-        padding: 0.1875rem 1.125rem;
-    }
-
-    .name_9 {
-        padding: 0.1875rem 1.75rem;
-    }
 
     .row .contacts_Column a {
         font-size: 0.8125rem;
     }
 
-    .contacts_Column .contact_column_icons {
+    /* .contacts_Column .contact_column_icons {
         padding: 0 0 0 0;
-    }
+    } */
 
     .card .card-link-wrapper {
         font-size: 0.9857rem;
@@ -1985,7 +1876,9 @@ nav .fa {
     /*HOME*/
 
     #index_hexGrid {
-        padding-bottom: 4.4%
+        padding-bottom: 4.4%;
+        align-items: center;
+        justify-content: space-evenly;
     }
 
     .index_hex {
@@ -2003,7 +1896,7 @@ nav .fa {
     /*CONTACTS*/
 
     .contacts_Column {
-        padding: 1.5rem;
+        /* padding: 1.5rem; */
     }
 
 
@@ -2066,7 +1959,7 @@ nav .fa {
 
 
     .row {
-        padding-top: 8.5%;
+        padding-top: 3%;
     }
 
     .row .contacts_Column a {
