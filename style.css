@@ -15,7 +15,7 @@
 /*(index_Header)*/
 
 .index_Header {
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.779), rgba(2, 8, 33, 0.427)), url("Images/bg_img1.png");
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.779), rgba(2, 8, 33, 0.427)), url("Images/bg_img1.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -876,7 +876,7 @@ nav .fa {
 
 
     .index_Header {
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.779), rgba(2, 8, 33, 0.427)), url("Images/bg_img2.png");
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.779), rgba(2, 8, 33, 0.427)), url("Images/bg_img2.webp");
 
         background-position: center;
         background-repeat: no-repeat;
@@ -1115,7 +1115,7 @@ nav .fa {
 
 
     .index_Header {
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.779), rgba(2, 8, 33, 0.427)), url("Images/bg_img2.png");
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.779), rgba(2, 8, 33, 0.427)), url("Images/bg_img2.webp");
 
         background-position: center;
         background-repeat: no-repeat;
@@ -1348,7 +1348,7 @@ nav .fa {
 @media only screen and (max-width: 768px) and (min-width: 601px) {
 
     .index_Header {
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.779), rgba(2, 8, 33, 0.427)), url("Images/bg_img2.png");
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.779), rgba(2, 8, 33, 0.427)), url("Images/bg_img2.webp");
 
         background-size: cover;
         background-position: center;
